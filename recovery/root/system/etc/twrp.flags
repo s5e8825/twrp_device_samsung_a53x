@@ -1,12 +1,8 @@
 # mount point	fstype		device	device2					flags
-# Logical f2fs partitions
-system		/system		f2fs						wait,logical,first_stage_mount
-vendor		/vendor		f2fs						wait,logical,first_stage_mount
-product		/product	f2fs						wait,logical,first_stage_mount
-odm		/odm		f2fs						wait,logical,first_stage_mount
 
-# Logical ext4 partitions
+# Logical partitions
 system		/system         ext4						wait,logical,first_stage_mount
+system		/system		f2fs						wait,logical,first_stage_mount
 vendor		/vendor		ext4						wait,logical,first_stage_mount
 product		/product	ext4						wait,logical,first_stage_mount
 odm		/odm		ext4						wait,logical,first_stage_mount
